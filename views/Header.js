@@ -1,5 +1,4 @@
 import React from "react";
-import ModernHeader from "react-native-modern-header";
 import {
   Platform,
   StyleSheet,
@@ -13,12 +12,7 @@ import {
 const Header = ({ navigation }) => {
   return (
     <View>
-      <ModernHeader
-        title={"Verify"}
-        titleStyle={styles.fixToText}
-        titleOnPress={leftIconOnPress}
-        leftIconOnPress={leftIconOnPress}
-      ></ModernHeader>
+    
 
       <View
         style={{

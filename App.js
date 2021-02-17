@@ -1,24 +1,23 @@
-import { StatusBar } from "expo-status-bar";
+import 'react-native-gesture-handler';
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import BiometricPopup from "./Authentication";
+import { StyleSheet } from "react-native";
 import { HomeNavigate } from "./navigation/BaseNavigationService";
+
+import { NavigationContainer } from '@react-navigation/native';
+import VerifyFloatingButton from './assets/VerifyFloatingButton';
 
 export default function App() {
   return (
     // <View style={styles.container}>
     /* <BiometricPopup /> */
-    <HomeNavigate />
-    //   <StatusBar style="auto" />
+
+  
+      
+    <VerifyFloatingButton  />
+  
+    
     // </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+

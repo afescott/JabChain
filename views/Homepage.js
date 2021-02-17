@@ -9,7 +9,6 @@ import {
 } from "react-native";
 import React from "react";
 import styled from "styled-components/native";
-import ModernHeader from "react-native-modern-header";
 
 const HeaderStyle = styled.View`
   height: 80px;
