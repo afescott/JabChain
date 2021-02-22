@@ -1,46 +1,51 @@
 import React from "react";
-import { Button, View, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
+import MainpageToolbar from "../assets/MainpageToolbar";
 import VerifyFloatingButton from "../assets/VerifyFloatingButton";
-import Header from "./Header";
+import MyTabs from "../navigation/BaseNavigationService";
 
-// import ModernHeader from "react-native-modern-header";
-
-const Mainpage = ({ navigation }) => {
+const Mainpage = ({}) => {
   return (
-    // Try setting `flexDirection` to `column`.
-
     <View
-    style={{
-      flex: 1,
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "space-around",
-    }}
+      style={{
+        flex: 1,
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
     >
+      <MainpageToolbar />
+      {/* <View
+        style={{
+          shadowColor: "black",
 
-      {/* <View style={{ width: 50, height: 50, backgroundColor: "powderblue" }} >
-      <Image source={require("../assets/verifylogo.png")} resize="cover" style={{width:500, height : 900, opacity:0.5}} ></Image>
+          shadowOpacity: 0.3,
+          elevation: 0.1,
+          justifyContent: "center",
+          alignContent: "center",
+          borderRadius: 30 / 2,
+        }}
+      >
+        <Text style={{ fontSize: 15, padding: 10 }}>Seek the information</Text>
+        <Text>Total number of Jab certificates : 15</Text>
       </View>
-       <View style={{ width: 50, height: 50, backgroundColor: "skyblue" }} />
-      <View style={{ width: 50, height: 50, backgroundColor: "steelblue" }} > */}
-        
-        <VerifyFloatingButton/>
-         {/* </View> */}
 
-         
+      <View
+        style={{
+          shadowColor: "black",
+          shadowOpacity: 0.3,
+          elevation: 0.1,
+
+          justifyContent: "center",
+          alignContent: "center",
+          borderRadius: 15,
+        }}
+      >
+        <Text style={{ fontSize: 15, padding: 10 }}>Seek the information</Text>
+        <Text>Total number of Jab certificates : 15</Text>
+      </View> */}
     </View>
   );
 };
 
 export default Mainpage;
-
-
-const styles = StyleSheet.create({
-    logoStyle: {
-      width: 100,
-      height: 100,
-      resizeMode: "contain",
-    
-  }
-
-})

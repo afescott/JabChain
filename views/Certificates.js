@@ -9,11 +9,6 @@ import {
   Button,
 } from "react-native";
 
-
 export const Certificates = ({ navigation }) => {
-    return (
-        <View> 
-            <Text> Certificates</Text>
-        </View>
-    );
-}
+  return <View></View>;
+};
