@@ -13,13 +13,19 @@ import BarcodeScanner from "../assets/BarcodeScanner";
 import TabBarHomeIcon from "../assets/TabBarIcon";
 import { navigationRef } from "./RootNavigation";
 import { AccountInfo } from "../views/AccountInfo";
+import MainpageToolbar from "../assets/MainpageToolbar";
+import TestImage from "../assets/Test";
 
 const BottomTab = createMaterialBottomTabNavigator();
 
 function MyBottomTabs() {
   return (
     <NavigationContainer ref={navigationRef}>
-      <BottomTab.Navigator>
+      <BottomTab.Navigator
+        // activeColor="#f0edf6"
+        style={{ activeColor: "#f0edf6" }}
+        barStyle={{ backgroundColor: "#1e1e1e" }}
+      >
         <BottomTab.Screen
           options={{
             tabBarIcon: ({ focused }) => (
@@ -30,8 +36,30 @@ function MyBottomTabs() {
             ),
           }}
           name="Mainpage"
-          component={Mainpage}
+          component={MainpageToolbar}
         />
+
+        <BottomTab.Screen
+          name="Account"
+          options={{
+            tabBarIcon: ({ focused }) => (
+              <TabBarHomeIcon
+                focused={focused}
+                name={Platform.OS === "ios" ? `md-person` : "md-person"}
+              />
+            ),
+          }}
+          component={MainpageToolbar}
+        />
+
+        {/* <BottomTab.Screen //see how the other tab bar icons style, and how the guy programmed it in the vid
+          name="Account"
+          options={{
+            tabBarIcon: <TestImage style={{ height: 15 }} />,
+          }}
+          component={MainpageToolbar}
+        /> */}
+
         <BottomTab.Screen
           name="Certificates"
           options={{
@@ -43,18 +71,6 @@ function MyBottomTabs() {
             ),
           }}
           component={Certificates}
-        />
-        <BottomTab.Screen
-          name="Account"
-          options={{
-            tabBarIcon: ({ focused }) => (
-              <TabBarHomeIcon
-                focused={focused}
-                name={Platform.OS === "ios" ? `md-person` : "md-person"}
-              />
-            ),
-          }}
-          component={AccountInfo}
         />
       </BottomTab.Navigator>
     </NavigationContainer>

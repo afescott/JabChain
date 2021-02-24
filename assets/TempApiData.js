@@ -1,0 +1,42 @@
+export default [
+  {
+    id: "412331",
+    product: "Vaccine #1",
+    store: "store000",
+    price: "1267.413",
+    purchaseDate: "2018-03-16",
+    address: "411 Lorraine Street, Motley, Colarado, 3419",
+  },
+  {
+    id: "afsaf",
+    product: "Vaccine #2",
+    store: "store000",
+    price: "1267.413",
+    purchaseDate: "2018-03-16",
+    address: "411 Lorraine Street, Motley, Colarado, 3419",
+  },
+  {
+    id: "2131ad",
+    product: "Vaccine #3",
+    store: "store000",
+    price: "1267.413",
+    purchaseDate: "2018-03-16",
+    address: "411 Lorraine Street, Motley, Colarado, 3419",
+  },
+  {
+    id: "89899787",
+    product: "Vaccine #4",
+    store: "store000",
+    price: "1267.413",
+    purchaseDate: "2018-03-16",
+    address: "411 Lorraine Street, Motley, Colarado, 3419",
+  },
+  {
+    id: "asfa12",
+    product: "Vaccine #5",
+    store: "store000",
+    price: "1267.413",
+    purchaseDate: "2018-03-16",
+    address: "411 Lorraine Street, Motley, Colarado, 3419",
+  },
+];

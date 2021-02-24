@@ -7,15 +7,16 @@ import { NavigationContainer } from "@react-navigation/native";
 import VerifyFloatingButton from "./assets/VerifyFloatingButton";
 import BarcodeScanner from "./assets/BarcodeScanner";
 import MainpageToolbar from "./assets/MainpageToolbar";
+import SignInScreen from "./views/SignInScreen";
+import { BottomTabBar } from "@react-navigation/bottom-tabs";
+import { BottomTabNavigate } from "./navigation/BottomTabBar";
+import TestImage from "./assets/Test";
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    /* <BiometricPopup /> */
-
-    <MainpageToolbar />
-    // <MyBottomTabs />
-
-    // </View>
+    // <BottomTabNavigate />
+    // <TestImage />
+    // <SignInScreen />
+    <MyBottomTabs />
   );
 }

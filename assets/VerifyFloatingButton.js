@@ -15,7 +15,7 @@ import styled from "styled-components";
 import { AntDesign, Entypo } from "@expo/vector-icons";
 import BarcodeScanner from "./BarcodeScanner";
 import { useNavigation } from "@react-navigation/native";
-import GoToButton from "./Test";
+
 import { supportedAuthenticationTypesAsync } from "expo-local-authentication";
 import { HomeNavigate } from "../navigation/BaseNavigationService";
 import { Homepage } from "../views/Homepage";
@@ -164,7 +164,8 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     justifyContent: "center",
-
+    width: 5,
+    height: 5,
     marginTop: 300,
 
     // position:"absolute" //this might f it up but the guy uses it in the vid
